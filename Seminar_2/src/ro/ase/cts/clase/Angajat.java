@@ -53,7 +53,7 @@ public class Angajat extends Aplicant {
 	@Override
 	public float getSumaFinantata() {
 		// TODO Auto-generated method stub
-		return 0;
+		return sumaFinantare;
 	}
 
 }
