@@ -13,7 +13,6 @@ public class StudentsReader extends IReader {
 
 	public StudentsReader(String filePath) {
 		super(filePath);
-		// TODO Auto-generated constructor stub
 	}
 
 	public List<Aplicant> readAplicants() throws FileNotFoundException, NumberFormatException {
@@ -24,13 +23,15 @@ public class StudentsReader extends IReader {
 		while (input.hasNext()) {
 			Student student = new Student();
 			super.citireAplicant(input, student);
-			int an_studii = input.nextInt();
+
+			int anStudii = input.nextInt();
 			String facultate = (input.next()).toString();
-			student.setAn_studii(an_studii);
+			student.setAnStudii(anStudii);
 			student.setFacultate(facultate);
-			
+
 			studenti.add(student);
 		}
+
 		input.close();
 		return studenti;
 	}

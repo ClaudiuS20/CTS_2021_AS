@@ -13,26 +13,26 @@ public class AngajatiReader extends IReader {
 
 	public AngajatiReader(String filePath) {
 		super(filePath);
-		// TODO Auto-generated constructor stub
 	}
 
 	public List<Aplicant> readAplicants() throws FileNotFoundException {
-		Scanner input2 = new Scanner(new File(super.filePath));
-		input2.useDelimiter(",");
+		Scanner input = new Scanner(new File(super.filePath));
+		input.useDelimiter(",");
 		List<Aplicant> angajati = new ArrayList<>();
 
-		while (input2.hasNext()) {
-			Angajat angajat=new Angajat();
-			super.citireAplicant(input2, angajat);
-			
-			int salariu = input2.nextInt();
-			String ocupatie = input2.next();
+		while (input.hasNext()) {
+			Angajat angajat = new Angajat();
+			super.citireAplicant(input, angajat);
+
+			int salariu = input.nextInt();
+			String ocupatie = input.next();
 			angajat.setSalariu(salariu);
 			angajat.setOcupatie(ocupatie);
-			
+
 			angajati.add(angajat);
 		}
-		input2.close();
+
+		input.close();
 		return angajati;
 	}
 }

@@ -18,9 +18,9 @@ public class Program {
 	}
 
 	public static void main(String[] args) {
-		System.out.println("Suma finantata pentru angajati: "+Angajat.getSumaFinantare());
-		System.out.println("Suma finantata pentru studenti: "+Student.getSumaFinantare());
-		System.out.println("Suma finantata pentru elevi: "+Elev.getSumaFinantare());
+		System.out.println("Suma finantata pentru angajati: " + Angajat.getSumaFinantare());
+		System.out.println("Suma finantata pentru studenti: " + Student.getSumaFinantare());
+		System.out.println("Suma finantata pentru elevi: " + Elev.getSumaFinantare());
 		List<Aplicant> listaAplicanti;
 		try {
 			listaAplicanti = citesteAplicanti(new AngajatiReader("angajati.txt"));
@@ -28,11 +28,10 @@ public class Program {
 			for (Aplicant aplicant : listaAplicanti) {
 				System.out.println(aplicant.toString());
 				System.out.println(aplicant.getSumaFinantata());
-				
+
 				aplicant.afisareRaspunsProiect(proiect);
 			}
 		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 

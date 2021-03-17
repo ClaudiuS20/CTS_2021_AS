@@ -3,11 +3,12 @@ package ro.ase.cts.clase;
 import java.util.Arrays;
 
 public abstract class Aplicant {
+
 	protected String nume;
 	protected String prenume;
 	protected int varsta;
 	protected int punctaj;
-	protected int nr_proiecte;
+	protected int numarProiecte;
 	protected String[] denumiriProiecte;
 
 	public String getNume() {
@@ -35,12 +36,13 @@ public abstract class Aplicant {
 	}
 
 	public void afisareRaspunsProiect(Proiect proiect) {
-		
-		boolean esteAcceptat = punctaj>=proiect.getPragDeAcceptare();
-		
-		StringBuilder stringBuilder = new StringBuilder("Aplicantul ").append(nume).append(" ").append(prenume).append(" ");
-		stringBuilder.append(esteAcceptat? "a fost acceptat." : "a fost respins.");
-		
+
+		boolean esteAcceptat = punctaj >= proiect.getPragDeAcceptare();
+
+		StringBuilder stringBuilder = new StringBuilder("Aplicantul ").append(nume).append(" ").append(prenume)
+				.append(" ");
+		stringBuilder.append(esteAcceptat ? "a fost acceptat." : "a fost respins.");
+
 		System.out.println(stringBuilder.toString());
 	}
 
@@ -54,25 +56,25 @@ public abstract class Aplicant {
 
 	public Aplicant() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 
-	public Aplicant(String nume, String prenume, int varsta, int punctaj, int nr_proiecte, String[] denumireProiect) {
+	public Aplicant(String nume, String prenume, int varsta, int punctaj, int numarProiecte,
+			String[] denumiriProiecte) {
 		super();
 		this.nume = nume;
 		this.prenume = prenume;
 		this.varsta = varsta;
 		this.punctaj = punctaj;
-		this.nr_proiecte = nr_proiecte;
-		this.denumiriProiecte = denumireProiect;
+		this.numarProiecte = numarProiecte;
+		this.denumiriProiecte = denumiriProiecte;
 	}
 
-	public int getNr_proiecte() {
-		return nr_proiecte;
+	public int getNumarProiecte() {
+		return numarProiecte;
 	}
 
-	public void setNr_proiecte(int nr_proiecte) {
-		this.nr_proiecte = nr_proiecte;
+	public void setNumarProiecte(int numarProiecte) {
+		this.numarProiecte = numarProiecte;
 	}
 
 	public String[] getDenumiriProiecte() {
@@ -83,17 +85,17 @@ public abstract class Aplicant {
 		this.denumiriProiecte = denumiriProiecte;
 	}
 
-	public void setVectorDenumiri(String[] denumiriProiecte, int nr_proiecte) {
-		this.nr_proiecte=nr_proiecte;
-		this.denumiriProiecte=denumiriProiecte;
+	public void setVectorDenumiri(String[] denumiriProiecte, int numarProiecte) {
+		this.numarProiecte = numarProiecte;
+		this.denumiriProiecte = denumiriProiecte;
 	}
-	
+
 	public abstract float getSumaFinantata();
 
 	@Override
 	public String toString() {
 		StringBuilder builder = new StringBuilder();
-		builder.append("Aplicant [nume=");
+		builder.append("nume=");
 		builder.append(nume);
 		builder.append(", prenume=");
 		builder.append(prenume);
@@ -101,13 +103,11 @@ public abstract class Aplicant {
 		builder.append(varsta);
 		builder.append(", punctaj=");
 		builder.append(punctaj);
-		builder.append(", nr_proiecte=");
-		builder.append(nr_proiecte);
-		builder.append(", denumiriProiecte=");
+		builder.append(", numar proiecte=");
+		builder.append(numarProiecte);
+		builder.append(", denumiri proiecte=");
 		builder.append(Arrays.toString(denumiriProiecte));
-		builder.append("]");
 		return builder.toString();
 	}
-	
-	
+
 }

@@ -13,26 +13,26 @@ public class EleviReader extends IReader {
 
 	public EleviReader(String filePath) {
 		super(filePath);
-		// TODO Auto-generated constructor stub
 	}
 
 	public List<Aplicant> readAplicants() throws FileNotFoundException {
-		Scanner input2 = new Scanner(new File(super.filePath));
-		input2.useDelimiter(",|\n");
+		Scanner input = new Scanner(new File(super.filePath));
+		input.useDelimiter(",|\n");
 		List<Aplicant> elevi = new ArrayList<>();
 
-		while (input2.hasNext()) {
+		while (input.hasNext()) {
 			Elev elev = new Elev();
-			super.citireAplicant(input2, elev);
-			int clasa = input2.nextInt();
-			String tutore = input2.next();
+			super.citireAplicant(input, elev);
+
+			int clasa = input.nextInt();
+			String tutore = input.next();
 			elev.setClasa(clasa);
 			elev.setTutore(tutore);
-			
+
 			elevi.add(elev);
 		}
 
-		input2.close();
+		input.close();
 		return elevi;
 	}
 }
