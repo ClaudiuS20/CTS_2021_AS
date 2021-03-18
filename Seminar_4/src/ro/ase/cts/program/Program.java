@@ -1,5 +1,6 @@
 package ro.ase.cts.program;
 
+import ro.ase.cts.clase.Casa;
 import ro.ase.cts.clase.Presedinte;
 import ro.ase.cts.clase.PresedinteLazy;
 
@@ -23,6 +24,19 @@ public class Program {
 		
 		System.out.println(presedinteLazy1.toString());
 		System.out.println(presedinteLazy2.toString());
+		
+		
+		Casa casa1 = Casa.getInstance(3, "Mircea", 700);
+		Casa casa2 = Casa.getInstance(1, "Junimea", 900);
+		
+		System.out.println(casa1.toString());
+		System.out.println(casa2.toString());
+		
+		casa1.setPret(1000);
+		casa2.setStrada("Libertatii");
+		
+		System.out.println(casa1.toString());
+		System.out.println(casa2.toString());
 	}
 
 }
