@@ -1,0 +1,4 @@
+Seminar 5:
+Simple Factory
+Factory Method
+Prototype
