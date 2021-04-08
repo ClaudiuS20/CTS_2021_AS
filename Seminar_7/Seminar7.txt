@@ -1,0 +1,4 @@
+Seminar 7:
+Facade -> Problema D, cerința 7
+Proxy -> Problema D, cerința 8
+Composite -> Problema D, cerința 9
