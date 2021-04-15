@@ -1,0 +1,2 @@
+Seminar 8:
+Decorator -> Problema B, cerința 7
