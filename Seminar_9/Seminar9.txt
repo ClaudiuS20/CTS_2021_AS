@@ -1,0 +1,3 @@
+Seminar 9:
+Flyweight -> Problema B, cerința 10
+Command -> Problema B, cerința 15
