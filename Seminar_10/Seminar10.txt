@@ -1,0 +1,4 @@
+Seminar 10:
+Strategy -> Problema B, cerința 11
+Chain of Responsibility -> Problema B, cerința 16
+State -> Problema B, cerința 13
