@@ -1,0 +1,4 @@
+Seminar 11:
+Observer -> Problema E, cerința 12
+Template -> Problema E, cerința 14
+Memento -> Problema E, cerința 15
