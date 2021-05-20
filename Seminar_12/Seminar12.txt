@@ -1,0 +1,14 @@
+Seminar 12:
+Testare unitară:
+Constructor cu parametru
+Constructor fără parametru
+Metoda adaugăNotă
+Metoda adaugăNotă - dimensiune
+Metoda calculeazăMedie
+Metoda calculeazăMedie - fără note
+Metoda calculeazăMedie - cu note
+Metoda areRestanțe - da
+Metoda areRestanțe - nu
+Metoda getNotă - excepție
+Metoda getNotă - excepție așteptată - JUnit4
+Metoda getNotă - excepție așteptată - JUnit5 (merge doar acolo)
