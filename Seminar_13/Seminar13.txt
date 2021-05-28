@@ -1,0 +1,21 @@
+Testare unitară:
+La constructor:
+testul Right (făcut)
+testul Boundary (făcut)
+testul Inverse Relationship
+testul Cross-check
+testul Error Conditions (făcut)
+testul Performance (făcut)
+testul Conformance
+testul Ordering
+testul Range (făcut)
+testul Reference
+testul Existence
+testul Cardinality (făcut)
+testul Time (făcut)
+La getPromovabilitate():
+Right
+Boundary
+Error
+Performance
+Cardinality
