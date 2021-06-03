@@ -1,0 +1,6 @@
+Continuare Seminar 13
+
+Mock-uri, Stub-uri, Fake-uri și Suite-uri
+
+Teste unitare pentru adaugăStudent și getPromovabilitate
+
